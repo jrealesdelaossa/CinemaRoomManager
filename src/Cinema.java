@@ -1,16 +1,22 @@
+import java.util.Scanner;
+
 public class Cinema {
     public static void main(String[] args) {
-        // Write your code here
-        int rows = 7;
-        int columns = 8;
-        char[][] seating = new char[rows][columns];
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Enter the number of rows:");
+        int rows = scanner.nextInt();
+        System.out.println("Enter the number of seats in each row:");
+        int seats = scanner.nextInt();
+        char[][] seating = new char[rows][seats];
 
         for (int i = 0; i < rows; i++) {
-            for (int j = 0; j < columns; j++) {
+            for (int j = 0; j < seats; j++) {
                 seating[i][j] = 'S';
             }
         }
 
+        benefitObtained(rows, seats);
         showSeating(seating);
     }
 
@@ -24,5 +30,19 @@ public class Cinema {
         System.out.println("5 " + seating[4][0] + " " + seating[4][1] + " " + seating[4][2] + " " + seating[4][3] + " " + seating[4][4] + " " + seating[4][5] + " " + seating[4][6] + " " + seating[4][7]);
         System.out.println("6 " + seating[5][0] + " " + seating[5][1] + " " + seating[5][2] + " " + seating[5][3] + " " + seating[5][4] + " " + seating[5][5] + " " + seating[5][6] + " " + seating[5][7]);
         System.out.println("7 " + seating[6][0] + " " + seating[6][1] + " " + seating[6][2] + " " + seating[6][3] + " " + seating[6][4] + " " + seating[6][5] + " " + seating[6][6] + " " + seating[6][7]);
+    }
+
+    private static void benefitObtained(int rows, int columns) {
+        int seating = rows * columns;
+        int benefit;
+        if (seating <= 60) {
+            benefit = seating * 10;
+        } else {
+            int frontRows = (rows / 2);
+            int rearRows = (rows - frontRows);
+            benefit = (frontRows * 10 + rearRows * 8) * columns;
+        }
+        System.out.println("Total income:");
+        System.out.println("$" + benefit);
     }
 }
