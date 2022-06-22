@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7d7723db-25f9-46c8-b71b-9915d3d3c7bc" name="Changes" comment="Stage 2-5 complete">
+    <list default="true" id="7d7723db-25f9-46c8-b71b-9915d3d3c7bc" name="Changes" comment="grid test">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CinemaRoomManager/Cinema.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CinemaRoomManager/Cinema.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Cinema.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Cinema.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,6 +19,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -49,6 +56,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.Cinema" />
+        <item itemvalue="Application.Cinema" />
+        <item itemvalue="Application.Cinema" />
+        <item itemvalue="Application.Cinema" />
+        <item itemvalue="Application.Cinema" />
       </list>
     </recent_temporary>
   </component>
@@ -62,6 +73,7 @@
       <updated>1655761515800</updated>
       <workItem from="1655761519526" duration="3839000" />
       <workItem from="1655815897562" duration="58000" />
+      <workItem from="1655868947422" duration="7000" />
     </task>
     <task id="LOCAL-00001" summary="Stage 1-5 complete">
       <created>1655762095990</created>
