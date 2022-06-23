@@ -27,8 +27,14 @@ public class Cinema {
             }
         }
 
-        // benefitObtained(rows - 1, seats - 1);
+        System.out.println();
+        benefitObtained(rows - 1, seats - 1);
+
+        System.out.println();
         showSeating(seating);
+
+        System.out.println();
+        ticketPrice(seating);
     }
 
     private static void showSeating(char[][] seating) {
@@ -55,6 +61,28 @@ public class Cinema {
         System.out.println("$" + benefit);
     }
 
-    // hacer el metodo para el precio del tiquete
-    //private static void ticketPrice
+    private static void ticketPrice(char[][] seating) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Enter a row number:");
+        int row = scanner.nextInt();
+        System.out.println("Enter a seat number in that row:");
+        int seat = scanner.nextInt();
+
+        System.out.println();
+        int rowsCinema = (seating.length - 1) * (seating[0].length - 1);
+        if (rowsCinema <= 60) {
+            System.out.println("Ticket price: $10");
+        } else {
+            if (row <= ((seating.length - 1) / 2)) {
+                System.out.println("Ticket price: $10");
+            } else {
+                System.out.println("Ticket price: $8");
+            }
+        }
+
+        seating[row][seat] = 'B';
+
+        System.out.println();
+        showSeating(seating);
+    }
 }
