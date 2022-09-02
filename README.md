@@ -35,3 +35,5 @@ seat by the `B` symbol. Finally, it should print the ticket price and stop. Note
 and seats won't be greater than 9.
 
 ![](./Images/3-5.png)
+
+esto es un cambio sencillo para practicar git con SSH
